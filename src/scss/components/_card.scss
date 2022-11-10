@@ -1,0 +1,272 @@
+/*--------------------------------------------------------------
+# Components Card
+--------------------------------------------------------------*/
+.card {
+    &.card-course {
+        border: none;
+        border-radius: 0.675rem;
+        background-color: $white;
+        overflow: hidden;
+        box-shadow: none;
+        padding: 1rem;
+
+        .discount {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .ico-category {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        // &:hover {
+        //   transform: translateY(-10px);
+        // }
+
+        .card-header {
+            position: relative;
+            min-height: 90px;
+
+            .ico-category {
+                display: none;
+            }
+
+            .card-title {
+                font-weight: $fw-bold;
+                font-size: 1.575rem;
+                line-height: 1.2;
+                padding-right: calc(70px + 1rem);
+            }
+
+            .card-subtitle {
+                font-size: 1rem;
+                font-weight: $fw-bold;
+            }
+        }
+
+        .card-footer,
+        .card-header {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+        }
+
+        .card-body {
+            padding: 0.5rem 0 2rem 0;
+            background-color: transparent;
+
+            .card-text {
+                line-height: 1.2;
+
+                span {
+                    font-size: 1rem;
+                    text-decoration: line-through;
+                    color: $light-gray;
+                }
+
+                strong {
+                    display: block;
+                    font-size: 2rem;
+                    font-weight: $fw-bold;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    &.card-pilares {
+        height: calc(100% - 60px);
+        margin-top: 60px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        border-radius: 1.25rem;
+
+        .ico {
+            border-radius: 50%;
+            background-color: rgba($secondary, 1);
+            background-size: 40px;
+
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+
+            position: absolute;
+            top: -62px;
+            left: 50%;
+            margin-left: -40px;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: $fw-bold;
+            margin-bottom: 0;
+            color: $primary;
+        }
+
+        .card-text {
+            font-weight: $fw-light;
+            font-size: 0.925rem;
+        }
+
+        .card-header {
+            padding-top: 2rem;
+            padding-bottom: 0;
+            background-color: transparent;
+            border: none;
+        }
+
+        .card-body {
+            padding-top: 1rem;
+        }
+    }
+
+    &.card-produtos {
+        height: 100%;
+        text-align: center;
+        border-radius: .875rem;
+
+        .ico {
+            border-radius: 50%;
+            background-color: rgba($secondary, 1);
+            background-size: 40px;
+
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: $fw-bold;
+            // margin-bottom: 0;
+            color: $primary;
+        }
+
+        .card-text {
+            font-weight: $fw-light;
+            font-size: 0.925rem;
+            text-align: left;
+        }
+
+        .card-header {
+            padding-top: 2rem;
+            padding-bottom: 0;
+        }
+
+        .card-body {
+            padding-top: 1rem;
+        }
+
+        .card-footer {
+            padding-bottom: 1.5rem;
+        }
+
+
+        .card-body,
+        .card-footer,
+        .card-header {
+            border: none;
+            background-color: transparent;
+        }
+    }
+
+    &.card-testimonials {
+        // box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: .875rem;
+        padding: 1.5rem;
+        border: none;
+
+        .ratings {
+            font-size: 1.4rem;
+
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+
+        .card-body,
+        .card-footer,
+        .card-header {
+            border: none;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        .card-body {
+            padding-top: 1.2rem;
+            padding-bottom: 1.4rem;
+        }
+
+        .testimonials-user {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+
+            .author-info {
+                font-weight: $fw-bold;
+                color: $primary;
+
+                span {
+                    display: block;
+                    font-weight: $fw-regular;
+                    margin-top: 0.4rem;
+                    font-size: 0.875rem;
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+.card-numbers {
+    display: flex;
+    flex-shrink: 1;
+    gap: 1rem;
+    height: 100%;
+
+    .icon-circle-svg {
+        border-radius: 50%;
+        background-color: rgba($primary, 0.1);
+        background-size: 20px;
+
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        margin-top: -1px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+
+            //   transform: rotate(180deg);
+            path {
+                fill: $secondary;
+            }
+        }
+    }
+
+    h3 {
+        font-size: 2.375rem;
+        font-weight: $fw-bold;
+        color: $primary;
+        margin-bottom: 0.3rem;
+    }
+
+    p {
+        color: $text-color;
+        margin-bottom: 0;
+    }
+}

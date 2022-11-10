@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Components Badge
+--------------------------------------------------------------*/
+.badge {
+  &.discount {
+    border-radius: 0.5rem;
+    background-color: rgba($pink, 0.3);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    color: $primary;
+    font-size: 1rem;
+    font-weight: $fw-bold;
+  }
+}

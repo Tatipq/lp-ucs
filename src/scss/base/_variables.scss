@@ -1,0 +1,74 @@
+// General Colors
+$magenta: #E84683;
+$red: #F0483E;
+$orange: #F58220;
+$yellow: #F4E501;
+$green: #6FBF4A;
+$cyan: #00B4AA;
+$blue: #42B4E4;
+$purple: #5B2D82;
+$pink: #B51E84;
+
+$white: #ffffff;
+$black: #000000;
+
+
+$gray: #949494;
+$light-gray: #dddddd;
+$dark-gray: #797979;
+
+/// Default color variables
+$primary: $purple;
+$dark-primary: daken($primary, 0.2%);
+$light-primary: lighten($primary, 0.2%);
+
+$secondary: $cyan;
+$dark-secondary: daken($secondary, 0.2%);
+$light-secondary: lighten($secondary, 0.2%);
+
+$extra: $green;
+$dark-extra: daken($extra, 0.2%);
+$light-extra: lighten($extra, 0.2%);
+
+$heading-color: $primary;
+$text-color: $dark-gray;
+$placeholder-color: #949494;
+
+$light-color: $light-gray;
+
+// Background color
+$bg-light: #f1f1f1;
+$bg-primary: $primary;
+$bg-secondary: $secondary;
+$bg-gradient: linear-gradient(270deg, $pink 0%, #772883 50.52%, $purple 100%);
+
+// Link Colors
+$links: $text-color;
+$links-hover: lighten($text-color, 0.2%);
+
+// Line colors
+$line-light: $light-gray;
+$line-dark: $dark-gray;
+$line-primary: $primary;
+$line-secondary: $secondary;
+
+/// Fonts Variables
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Mulish", sans-serif;
+
+$font-default: $font-primary;
+$heading-font: $font-default;
+$text-font: $font-default;
+
+/// Fonts weight
+$fw-xlight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi: 600;
+$fw-bold: 700;
+$fw-xbold: 800;
+$fw-black: 900;
+
+/// userSpaceOnUse
+$pad-space: 6.25rem;

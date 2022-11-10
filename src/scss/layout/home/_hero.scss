@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# Section Hero
+--------------------------------------------------------------*/
+#hero {
+  margin-top: 80px;
+
+  @media (max-width: 991.98px) {
+    margin-top: 0;
+  }
+
+  .section-title {
+    .title-default {
+      padding-right: 4rem;
+    }
+    .subtitle-default {
+      padding-right: 1rem;
+    }
+  }
+}

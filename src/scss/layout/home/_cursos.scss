@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Section cursos
+--------------------------------------------------------------*/
+.cursos-section {
+  background-color: $secondary;
+
+  .infinity-card {
+    .cont-carousel {
+      @media (min-width: 1200px) {
+        padding-left: 15px;
+      }
+    }
+
+    .infinity-carousel {
+      display: flex;
+      flex-direction: column-reverse;
+      .owl-nav {
+        margin-top: 0;
+        // margin-bottom: 30px;
+        padding-right: 15px;
+        text-align: right;
+
+        // @media (max-width: 576px) {
+        //   display: none;
+        // }
+      }
+    }
+  }
+}

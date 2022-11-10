@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Section pilares
+--------------------------------------------------------------*/
+.pilares-section {
+    position: relative;
+    padding-bottom: 0;
+    background-color: $bg-light;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: calc(100% - 85px);
+        display: block;
+        background-color: $primary;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // z-index: -1;
+    }
+
+    .row {
+        div[class*="col"] {
+            padding-bottom: 20px;
+        }
+    }
+}

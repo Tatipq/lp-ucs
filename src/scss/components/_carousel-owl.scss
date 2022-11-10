@@ -1,0 +1,250 @@
+/*--------------------------------------------------------------
+# Components Carousel OWL
+--------------------------------------------------------------*/
+.owl-carousel {
+    .owl-nav {
+        button {
+
+            &.owl-next,
+            &.owl-prev {
+                background-color: $white;
+                border: none !important;
+                color: transparent;
+                position: relative;
+
+                width: 40px;
+                height: 40px;
+                padding: 0;
+
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+
+                border-radius: 50%;
+                box-shadow: 0px 0px 7px 7px rgba($primary, 0.03);
+
+                &.disabled {
+                    opacity: 0.5;
+                }
+
+                &:hover {
+                    color: transparent;
+                    background-color: $primary;
+                    border-color: $primary;
+
+                    &:before {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 17px;
+                    height: 17px;
+
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    position: absolute;
+
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-color: transparent;
+                    background-position: center;
+                }
+            }
+
+            &.disabled {
+                cursor: default;
+            }
+
+            &.owl-next {
+                &:before {
+                    background-image: url("../img/icon/icons_arrowright.svg");
+                }
+            }
+
+            &.owl-prev {
+                &:before {
+                    background-image: url("../img/icon/icons_arrowleft.svg");
+                }
+            }
+
+            span {
+                text-indent: -99999px;
+            }
+        }
+
+        .owl-next {
+            margin-left: 20px;
+        }
+    }
+
+    &#owl-images {
+        border-radius: 0.675rem;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+
+        .owl-dots {
+            //   text-align: center;
+            -webkit-tap-highlight-color: transparent;
+            //   position: absolute;
+            //   bottom: -50px;
+            width: 100%;
+            padding: 1rem 1.5rem;
+
+            .owl-dot {
+                display: inline-block;
+                zoom: 1;
+
+                &.active {
+                    span {
+                        background: $extra;
+
+                        width: 30px;
+                    }
+                }
+
+                span {
+                    width: 12px;
+                    height: 12px;
+                    margin: 5px 7px;
+                    background: transparent;
+                    border: solid 1px $extra;
+                    display: block;
+                    -webkit-backface-visibility: visible;
+                    transition: opacity 0.2s ease;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+    &#owl-depoimentos {
+        .owl-nav {
+            button {
+
+                &.owl-next,
+                &.owl-prev {
+                    background-color: $secondary;
+                    border: none !important;
+                    color: transparent;
+
+                    &:before {
+                        filter: brightness(0) invert(1);
+                    }
+
+                    &:hover:not(.disabled) {
+                        color: transparent;
+                        background-color: $extra;
+                        border-color: $extra;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.infinity-card {
+    width: 100%;
+    margin: 0 auto $pad-space;
+    overflow: initial;
+    position: relative;
+
+    .cont-carousel {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 70px;
+
+        @media only screen and (max-width: 1500px) {
+            padding-right: 0;
+        }
+
+        @media only screen and (max-width: 1025px) {
+            padding: 0 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            //   margin-top: 60px;
+            //   padding-left: 0;
+        }
+
+        @media (min-width: 576px) {
+            max-width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            max-width: 720px;
+        }
+
+        @media (min-width: 992px) {
+            max-width: 960px;
+            padding-left: 0;
+        }
+
+        @media (min-width: 1200px) {
+            //   max-width: 1140px;
+            //   padding-left: 70px;
+            max-width: 1140px;
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+        .infinity-carousel {
+            position: relative;
+
+            .owl-stage-outer {
+                @media only screen and (max-width: 1500px) {
+                    overflow: initial;
+                    -webkit-clip-path: inset(-100vw -100vw -100vw 0);
+                    -moz-clip-path: inset(-100vw -100vw -100vw 0);
+                    -ms-clip-path: inset(-100vw -100vw -100vw 0);
+                    clip-path: inset(-100vw -100vw -100vw 0);
+                }
+            }
+
+            .item {
+                padding: 1rem 1rem 0 1rem;
+
+                .item__link {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    height: 260px;
+                    background: #fff;
+                    border-radius: 10px;
+                    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    .owl-carousel {
+        .owl-nav {
+            margin-top: 0;
+            padding-left: 1rem;
+            position: absolute;
+            bottom: -80px;
+            right: 0;
+
+            button {
+                &:hover {
+                    background-color: saturate(lighten($primary, 15), 10);
+                    border-color: saturate(lighten($primary, 15), 10);
+                }
+
+                &:before {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}

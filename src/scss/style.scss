@@ -1,0 +1,43 @@
+// Base.
+@import "base/variables";
+@import "base/reset";
+@import "base/page";
+@import "base/typography";
+
+// Component.
+@import "components/badge";
+@import "components/button";
+@import "components/card";
+@import "components/carousel-owl";
+@import "components/cookies";
+@import "components/filter";
+@import "components/form";
+@import "components/icons";
+@import "components/image";
+@import "components/modal";
+@import "components/nav";
+@import "components/preloader";
+@import "components/range";
+@import "components/select2";
+@import "components/video";
+
+// Layout.
+@import "layout/header";
+@import "layout/footer";
+
+@import "layout/home/hero";
+@import "layout/home/produtos";
+@import "layout/home/porque";
+@import "layout/home/numeros";
+@import "layout/home/pilares";
+@import "layout/home/depoimentos";
+
+@import "layout/cursos/page";
+@import "layout/cursos/header";
+@import "layout/cursos/cursos";
+@import "layout/cursos/sidebar";
+
+@import "layout/curso/page";
+@import "layout/curso/header";
+@import "layout/curso/info";
+@import "layout/curso/diferenciais";

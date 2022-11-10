@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+# Components Video
+--------------------------------------------------------------*/
+.box-video {
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+
+    .video-btn {
+        border: none;
+        background: transparent;
+        padding: 0;
+        position: relative;
+        height: fit-content;
+
+        @media (max-width: 1199px) {}
+
+        @media (max-width: 1024px) {}
+
+        @media (max-width: 991.98px) {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767.98px) {}
+
+        @media (max-width: 576px) {}
+
+        img {
+            border-radius: 0.675rem;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+
+        &:after {
+            width: 0;
+            height: 0;
+            border-top: 35px solid transparent;
+            border-bottom: 35px solid transparent;
+            border-left: 60px solid $white;
+            top: 50%;
+            left: 50%;
+            margin-top: -33px;
+            margin-left: -33px;
+            //   opacity: 0.5;
+            transition: all 0.25s ease;
+        }
+
+        &:hover {
+            &:after {
+                // border-left: 25px solid $primary;
+                opacity: 0.7;
+            }
+        }
+    }
+}

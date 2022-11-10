@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+# Section depoimentos
+--------------------------------------------------------------*/
+.depoimentos-section {
+    background-color: $bg-light;
+
+    header.section-title {
+        h2.title-default {
+            strong {
+                display: block;
+            }
+        }
+    }
+
+
+    #owl-depoimentos {
+        .owl-nav {
+            width: fit-content;
+            position: absolute;
+            top: 150px;
+            left: -200px;
+        }
+    }
+}

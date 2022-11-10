@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+# Components Form
+--------------------------------------------------------------*/
+.input-group {
+    &.search {
+        .form-control {
+            padding: 0.625rem 2.125rem;
+            border-radius: 0.675rem;
+            height: 44px;
+            border-color: $line-light;
+
+            &:focus,
+            &:focus-visible {
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::-webkit-input-placeholder,
+            &::-moz-placeholder,
+            &:-ms-input-placeholder,
+            &:-webkit-input-placeholder {
+                color: $placeholder-color;
+            }
+        }
+
+        .input-group-append {
+            margin-left: -0.675rem;
+            z-index: 10;
+
+            >.btn {
+                border-radius: 0.675rem;
+                padding: 0.625rem 2.525rem;
+                border: none;
+            }
+        }
+    }
+}
+
+// CUSTOM RADIO / CHECK
+.custom-control {
+    .custom-control-label {
+        position: relative;
+        width: 100%;
+
+        font-size: 0.975rem;
+        line-height: 1.675;
+        color: $dark-gray;
+        font-weight: $fw-medium;
+
+        cursor: pointer;
+    }
+
+    .custom-control-input:focus~.custom-control-label::before {
+        box-shadow: none;
+    }
+
+    .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+        border-color: $dark-secondary;
+    }
+
+    &.custom-radio {
+        .custom-control-label {
+            &:before {
+                border-color: $dark-secondary;
+                background-color: $white;
+            }
+        }
+
+        .custom-control-input:checked~.custom-control-label::after {
+            background-image: url("../img/icon/circle.svg");
+        }
+    }
+
+    &.custom-checkbox {
+        .custom-control-label {
+            &:before {
+                border-color: $dark-secondary;
+            }
+        }
+
+        .custom-control-input:checked~.custom-control-label::before {
+            border-color: $dark-secondary;
+            background-color: $dark-secondary;
+        }
+    }
+}

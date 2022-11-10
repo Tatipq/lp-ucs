@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+# Section numeros
+--------------------------------------------------------------*/
+.numeros-section {
+  .section-title {
+    .title-default {
+      padding-right: 3.2rem;
+    }
+  }
+
+  .row-numbers {
+    div[class*="col-"] {
+      margin-bottom: 30px;
+    }
+  }
+}
