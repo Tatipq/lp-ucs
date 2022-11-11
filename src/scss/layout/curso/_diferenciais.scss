@@ -1,0 +1,110 @@
+/*--------------------------------------------------------------
+# Section Diferenciais
+--------------------------------------------------------------*/
+.diferenciais-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: $bg-light;
+    // color: $white;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        padding-top: 6rem;
+    }
+
+    header {
+        padding-bottom: 6rem;
+
+        @media (max-width: 767px) {
+            padding-bottom: 2rem;
+
+            +.row {
+                display: flex;
+                justify-content: center;
+
+                .col-8 {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .section-title {
+            color: $primary;
+
+            small {
+                color: $dark-gray;
+                font-weight: $fw-normal;
+            }
+        }
+    }
+
+    .row {
+        [class*="col-"] {
+            &:not(:last-child) {
+                border-right: solid 1px $line-light;
+
+                @media (max-width: 767px) {
+                    border-right: none;
+                    border-bottom: solid 1px $line-light;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991px) {
+                border-right: none;
+                border-bottom: solid 1px $line-light;
+
+                .card-body {
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                }
+
+                &:nth-child(2) {
+                    border-right: none;
+                }
+
+                &:nth-child(3),
+                &:nth-child(4) {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    .card {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .card-body {
+            padding-top: 0;
+            padding-bottom: 1rem;
+
+            @media (max-width: 767px) {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        .ico {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            margin-bottom: 0;
+
+            @media (max-width: 767px) {
+                font-size: 1.1rem;
+            }
+
+            @media (max-width: 599px) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

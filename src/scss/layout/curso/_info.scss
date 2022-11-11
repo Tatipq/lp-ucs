@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Section Curso info 
+--------------------------------------------------------------*/
+.curso-info {
+
+
+    .section-title {
+        color: $primary;
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+
+        @media (max-width: 767px) {
+            text-align: right;
+            font-size: 1.8rem;
+        }
+
+        +picture {
+            margin-top: 2rem;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            img {}
+        }
+    }
+
+    .btn {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+
+        display: inline-flex;
+        align-items: center;
+
+        i {
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .page-subtitle,
+    p strong {
+        color: $primary;
+    }
+}

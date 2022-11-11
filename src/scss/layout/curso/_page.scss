@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# Pagina de curso
+--------------------------------------------------------------*/
+.course-page {
+    .header-back {
+        border-bottom-color: transparent;
+
+        .logo-color {
+            display: none;
+        }
+
+        .btn-back {
+            color: $white;
+
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+
+            &:hover {
+                color: $white;
+                opacity: .8;
+
+                svg {
+                    path {
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}

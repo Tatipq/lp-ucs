@@ -1,0 +1,15 @@
+{% extends "template.html" %}
+
+{% set page ='curso' %}
+
+{% block meta %}
+    <title>lorem_title</title>
+{% endblock %}
+
+{% block content %}
+{% include('parts/curso/curso-header.html') %}
+<main id="main">
+    {% include "parts/curso/curso-info-section.html" %}
+    {% include "parts/curso/curso-diferenciais-section.html" %}
+</main><!-- End main -->
+{% endblock %}
