@@ -2,13 +2,13 @@
 
 Access the layout
 
-[> Open layout](https://www.figma.com/file/Rn1Wd1ghESVGN564fHn8T0/LP-Convers%C3%A3o---UNIFACS?node-id=271%3A2053)
+[> Open layout](https://www.figma.com/file/k8vvI4aMzI801JYrTocMwJ/UCs---%C3%82NIMA?node-id=100%3A3306)
 
 ## Online example
 
 Access the site
 
-[> Open site](lp-ucs.surge.sh)
+[> Open site](https://lp-ucs.surge.sh/)
 
 ## Building
 
