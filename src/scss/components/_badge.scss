@@ -2,16 +2,16 @@
 # Components Badge
 --------------------------------------------------------------*/
 .badge {
-  &.discount {
-    border-radius: 0.5rem;
-    background-color: rgba($pink, 0.3);
+    &.discount {
+        border-radius: 0.5rem;
+        background-color: $bg-light;
 
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
 
-    color: $primary;
-    font-size: 1rem;
-    font-weight: $fw-bold;
-  }
+        color: $green;
+        font-size: 1rem;
+        font-weight: $fw-bold;
+    }
 }

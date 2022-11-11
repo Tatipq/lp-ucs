@@ -2,6 +2,55 @@
 # Components Card
 --------------------------------------------------------------*/
 .card {
+    &.card-cta {
+        &.degustacao {
+            background-color: $purple;
+        }
+
+        &.assinatura {
+            background-color: $pink;
+        }
+
+        border: none;
+        border-radius: 0.675rem;
+        overflow: hidden;
+        box-shadow: none;
+        padding: 1rem;
+        height: 100%;
+
+        .img-top {
+            max-height: 100px;
+        }
+
+        .card-footer,
+        .card-header {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+        }
+
+        .card-body {
+            padding: 1.2rem 0 1.2rem 0;
+            background-color: transparent;
+
+            .card-title {
+                font-weight: $fw-bold;
+                font-size: 1.255rem;
+                line-height: 1.2;
+                color: $white;
+            }
+
+            .card-text {
+                font-size: 0.875rem;
+                font-weight: $fw-normal;
+                color: $white;
+            }
+        }
+    }
+
     &.card-course {
         border: none;
         border-radius: 0.675rem;
@@ -9,6 +58,7 @@
         overflow: hidden;
         box-shadow: none;
         padding: 1rem;
+        height: 100%;
 
         .discount {
             position: absolute;
@@ -36,14 +86,16 @@
 
             .card-title {
                 font-weight: $fw-bold;
-                font-size: 1.575rem;
+                font-size: 1.255rem;
                 line-height: 1.2;
                 padding-right: calc(70px + 1rem);
+                color: $primary;
             }
 
             .card-subtitle {
-                font-size: 1rem;
-                font-weight: $fw-bold;
+                font-size: 0.875rem;
+                font-weight: $fw-medium;
+                color: $text-dark;
             }
         }
 
@@ -64,14 +116,14 @@
                 span {
                     font-size: 1rem;
                     text-decoration: line-through;
-                    color: $light-gray;
+                    color: $dark-gray;
                 }
 
                 strong {
                     display: block;
                     font-size: 2rem;
                     font-weight: $fw-bold;
-                    color: $secondary;
+                    color: $text-dark;
                 }
             }
         }

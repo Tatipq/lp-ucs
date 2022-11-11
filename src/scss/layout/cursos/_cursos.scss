@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Listagem de cursos
+--------------------------------------------------------------*/
+.list-courses {
+  .row {
+    margin-left: 0;
+    margin-right: -10px;
+
+    @media (max-width: 991.98px) {
+      margin-left: -10px;
+    }
+  }
+  div[class*="col"] {
+    padding: 10px;
+    .card-course {
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      .card-header {
+        padding-top: 60px;
+
+        .ico-category {
+          display: block;
+        }
+
+        .discount {
+          height: 40px;
+          padding-left: 0.8em;
+          padding-right: 0.8em;
+        }
+        .card-title {
+          padding-right: 0;
+        }
+      }
+      .card-body {
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+      }
+    }
+  }
+}

@@ -32,6 +32,7 @@ $light-extra: lighten($extra, 0.2%);
 
 $heading-color: $primary;
 $text-color: $dark-gray;
+$text-dark: #353535;
 $placeholder-color: #949494;
 
 $light-color: $light-gray;
@@ -64,6 +65,7 @@ $text-font: $font-default;
 $fw-xlight: 200;
 $fw-light: 300;
 $fw-regular: 400;
+$fw-normal: $fw-regular;
 $fw-medium: 500;
 $fw-semi: 600;
 $fw-bold: 700;

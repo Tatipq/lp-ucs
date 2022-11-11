@@ -1,0 +1,184 @@
+<!-- ======= Sidebar ======= -->
+<aside id="aside" class="sidebar col-md-12 col-lg-3">
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="input-group search">
+            <input type="text" class="form-control" placeholder="Digite aqui o curso que deseja"
+                aria-label="Digite aqui o curso que deseja" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-secondary" type="button">Pesquisar</button>
+            </div><!-- /input-group-append -->
+        </div><!-- /input-group -->
+
+        <button class="btn navbar-toggler btn-filtro" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="ico ico-filter"></span> Filtro
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- ======= Header ======= -->
+            <header id="" class="section-title">
+                <div class="top-link">
+                    <button class="btn btn-link btn-back navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width="16" height="12" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 7L1 7" stroke="#D9006E" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10 1L17 7L10 13" stroke="#D9006E" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Voltar
+                    </button>
+                    <!-- <a href="javascript:history.back()" class="btn btn-link btn-back">
+                        <svg width="16" height="12" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 7L1 7" stroke="#D9006E" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M10 1L17 7L10 13" stroke="#D9006E" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        Voltar
+                    </a> -->
+                </div><!-- /top-link -->
+
+                <h3 class="tit-sidebar">Filtro</h3>
+            </header><!-- /section-title -->
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarBusca" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                        Busca
+                    </a>
+                    <div class="dropdown-menu filter show" aria-labelledby="sidebarBusca">
+                        <input class="form-control" type="text" placeholder="Digite o curso que deseja">
+                        <button type="button" class="btn btn-extra btn-block">Pesquisar</button>
+                    </div><!-- /dropdown-menu -->
+                </li><!-- /nav-item -->
+
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarOrdenacao" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Ordenação
+                    </a>
+                    <div class="dropdown-menu filter show" aria-labelledby="sidebarOrdenacao">
+                        <div class="custom-control custom-radio">
+                            <input class="custom-control-input" type="radio" name="filtroOrdenacao"
+                                id="filtroOrdenacao1">
+                            <label class="custom-control-label" for="filtroOrdenacao1">
+                                Cursos mais procurados
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input class="custom-control-input" type="radio" name="filtroOrdenacao"
+                                id="filtroOrdenacao2" checked>
+                            <label class="custom-control-label" for="filtroOrdenacao2">
+                                De A a Z
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input class="custom-control-input" type="radio" name="filtroOrdenacao"
+                                id="filtroOrdenacao3">
+                            <label class="custom-control-label" for="filtroOrdenacao3">
+                                De Z a A
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input class="custom-control-input" type="radio" name="filtroOrdenacao"
+                                id="filtroOrdenacao4" checked>
+                            <label class="custom-control-label" for="filtroOrdenacao4">
+                                Maior preço
+                            </label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input class="custom-control-input" type="radio" name="filtroOrdenacao"
+                                id="filtroOrdenacao5">
+                            <label class="custom-control-label" for="filtroOrdenacao5">
+                                Menor preço
+                            </label>
+                        </div>
+                    </div><!-- /dropdown-menu -->
+                </li><!-- /nav-item -->
+
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarDuracao" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Duração do curso
+                    </a>
+                    <div class="dropdown-menu filter show" aria-labelledby="sidebarDuracao">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroDuracao1">
+                            <label class="custom-control-label" for="filtroDuracao1">2 semestres</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroDuracao2">
+                            <label class="custom-control-label" for="filtroDuracao2">4 semestres</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroDuracao3">
+                            <label class="custom-control-label" for="filtroDuracao3">6 semestres</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroDuracao4">
+                            <label class="custom-control-label" for="filtroDuracao4">8 semestres</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroDuracao5">
+                            <label class="custom-control-label" for="filtroDuracao5">10 semestres</label>
+                        </div>
+
+                    </div><!-- /dropdown-menu -->
+                </li><!-- /nav-item -->
+
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarArea" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">
+                        Área de conhecimento
+                    </a>
+                    <div class="dropdown-menu filter show" aria-labelledby="sidebarArea">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaComunicacao">
+                            <label class="custom-control-label" for="filtroAreaComunicacao">Comunicação</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaDesign">
+                            <label class="custom-control-label" for="filtroAreaDesign">Design</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaDireito">
+                            <label class="custom-control-label" for="filtroAreaDireito">Direito</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaEducacao">
+                            <label class="custom-control-label" for="filtroAreaEducacao">Educação</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaEngenharia">
+                            <label class="custom-control-label" for="filtroAreaEngenharia">Engenharia</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaNegocios">
+                            <label class="custom-control-label" for="filtroAreaNegocios">Negócios</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaSaude">
+                            <label class="custom-control-label" for="filtroAreaSaude">Saúde</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaTecnologia">
+                            <label class="custom-control-label" for="filtroAreaTecnologia">Tecnologia</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="filtroAreaTurismo">
+                            <label class="custom-control-label" for="filtroAreaTurismo">Turismo</label>
+                        </div>
+
+                    </div><!-- /dropdown-menu -->
+                </li><!-- /nav-item -->
+
+
+            </ul><!-- /navbar-nav -->
+        </div><!-- /navbar-collapse -->
+    </nav><!-- /navbar -->
+</aside><!-- /sidebar -->

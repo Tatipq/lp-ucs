@@ -44,7 +44,7 @@
 
         font-size: 0.975rem;
         line-height: 1.675;
-        color: $dark-gray;
+        color: $primary;
         font-weight: $fw-medium;
 
         cursor: pointer;
@@ -55,13 +55,13 @@
     }
 
     .custom-control-input:focus:not(:checked)~.custom-control-label::before {
-        border-color: $dark-secondary;
+        border-color: $secondary;
     }
 
     &.custom-radio {
         .custom-control-label {
             &:before {
-                border-color: $dark-secondary;
+                border-color: $secondary;
                 background-color: $white;
             }
         }
@@ -74,13 +74,13 @@
     &.custom-checkbox {
         .custom-control-label {
             &:before {
-                border-color: $dark-secondary;
+                border-color: $secondary;
             }
         }
 
         .custom-control-input:checked~.custom-control-label::before {
-            border-color: $dark-secondary;
-            background-color: $dark-secondary;
+            border-color: $secondary;
+            background-color: $secondary;
         }
     }
 }
