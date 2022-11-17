@@ -2,17 +2,21 @@
 # Section porque
 --------------------------------------------------------------*/
 .porque-section {
-  .section-title {
-    .title-default {
-      strong {
-        display: block;
-      }
+    .section-title {
+        .title-default {
+            strong {
+                display: block;
+            }
+        }
+
+        .subtitle-default {
+            padding-right: 1rem;
+        }
+
+        @media (min-width: 991.98px) {
+            .btn {
+                max-width: 75%;
+            }
+        }
     }
-    .subtitle-default {
-      padding-right: 1rem;
-    }
-    .btn {
-      max-width: 75%;
-    }
-  }
 }

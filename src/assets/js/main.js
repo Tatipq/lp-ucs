@@ -186,6 +186,27 @@
         });
     }
 
+
+
+    function owlProdutos() {
+        $(".carousel-produtos").owlCarousel({
+            loop: !0,
+            nav: false,
+            dots: !1,
+            responsive: {
+                0: { items: 1.15 },
+                425: { items: 1.15 },
+                600: { items: 1.35 },
+                768: { items: 2.15 },
+                900: { items: 2.5 },
+                1024: {
+                    items: 3,
+                    loop: !1
+                },
+            },
+        });
+    }
+
     // carousel
     function owlDepoimentos() {
         $("#owl-depoimentos").owlCarousel({
@@ -199,7 +220,21 @@
             items: 1,
             nav: true,
             loop: false,
-            dots: false
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1.15,
+                    margin: 15
+                },
+                425: {
+                    items: 1.15,
+                    margin: 15
+                },
+                577: {
+                    items: 1,
+                    margin: 0
+                },
+            },
         });
     }
 
@@ -238,6 +273,7 @@
         aos_init();
         owlImages();
         owlCursos();
+        owlProdutos();
         owlDepoimentos();
 
         modalVideo();
