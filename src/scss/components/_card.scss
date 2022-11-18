@@ -214,6 +214,10 @@
             .btn {
                 margin-bottom: -23px;
                 border-radius: 0.5rem;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -273,6 +277,82 @@
                     color: $text-dark;
                 }
             }
+        }
+    }
+
+    &.card-info-assine {
+        border-radius: 0.675rem;
+        background-color: $purple;
+        color: $white;
+        overflow: hidden;
+        box-shadow: none;
+        height: 100%;
+        align-items: stretch;
+
+        .card-title {
+            font-weight: $fw-bold;
+            font-size: 2.5rem;
+            line-height: 1.2;
+            color: $white;
+        }
+
+        .card-img-top {
+            position: relative;
+            overflow: hidden;
+
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                background-color: rgba($primary, 0.45);
+            }
+        }
+
+        ul {
+            border-top: solid 1px #6B3499;
+            border-bottom: solid 1px #6B3499;
+            padding: 1.5rem 0;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .6rem;
+                font-size: .875rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    font-weight: $fw-bold;
+                }
+            }
+        }
+
+        .card-body {
+            padding: 2rem 1.5rem;
+
+            .btn-outline-secondary {
+                color: $white;
+            }
+        }
+
+        .card-footer {
+            padding: 0rem 1.5rem 2rem;
+        }
+
+        .card-footer,
+        .card-body {
+            border: none;
+            background-color: transparent;
         }
     }
 

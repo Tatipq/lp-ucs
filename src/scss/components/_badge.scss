@@ -2,16 +2,32 @@
 # Components Badge
 --------------------------------------------------------------*/
 .badge {
+    border-radius: 0.5rem;
+    background-color: $bg-light;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    font-weight: $fw-bold;
+
+    &.secondary {
+        color: $secondary;
+
+        svg {
+            path {
+                stroke: $secondary;
+            }
+        }
+    }
+
     &.discount {
-        border-radius: 0.5rem;
-        background-color: $bg-light;
-
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-
         color: $green;
-        font-size: 1rem;
-        font-weight: $fw-bold;
+
+        svg {
+            path {
+                stroke: $green;
+            }
+        }
     }
 }

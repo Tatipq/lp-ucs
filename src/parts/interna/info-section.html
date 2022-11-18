@@ -1,13 +1,25 @@
 <!-- ======= Assinatura Section ======= -->
 <section id="info" class="info-section">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-between">
             <div class="col-12 col-lg-6">
                 <header class="section-title" data-aos="fade-up">
                     <h2 class="title-default">
                         Assinatura. <strong>Conheça mais sobre essa opção</strong>
                     </h2>
-                    <span class="badge">
+                    <span class="badge secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_389_1836)">
+                                <path d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 9.99999C18.3332 5.39762 14.6022 1.66666 9.99984 1.66666C5.39746 1.66666 1.6665 5.39762 1.6665 9.99999C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z" stroke="#00B4AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 6.66666V9.99999" stroke="#00B4AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 13.3333H10.0083" stroke="#00B4AA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_389_1836">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
                         Cursos Online
                     </span>
                 </header>
@@ -19,8 +31,13 @@
                     <p>
                         Cras egestas, nibh a dapibus suscipit, elit purus sollicitudin orci, porttitor aliquam mi lectus in urna. Mauris lobortis ipsum a ornare interdum. In hac habitasse platea dictumst. 
                     </p>
-                    <a href="#" class="btn btn-secondary" title="Fale com o consultor">Fale com o consultor</a>                
+                    <div class="row">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <a href="#" class="btn btn-secondary btn-block" title="Fale com o consultor">Fale com o consultor</a> 
+                        </div><!-- /col -->
+                    </div><!-- /row -->          
                 </article>
+                <hr>
                 <footer>
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-3">
@@ -41,7 +58,12 @@
                         </div><!-- /col -->
                     </div><!-- /row -->
                 </footer>
+            </div><!-- /col -->
+            <div class="col-12 col-lg-5">
 
+                <!-- ###### ITEM ###### -->
+                {% include "parts/components/card-info-assine.html" %}
+                
             </div><!-- /col -->
         </div><!-- /row -->
 
