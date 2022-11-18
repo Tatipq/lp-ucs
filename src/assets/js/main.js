@@ -186,6 +186,29 @@
         });
     }
 
+    function owlAssinaturas() {
+        $("#owl-assinaturas").owlCarousel({
+            // loop: !0,
+            // nav: true,
+            // dots: !1,
+            // loop: true,
+            // margin: 10,
+            nav: true,
+            margin: 15,
+            responsive: {
+                0: { items: 1.15 },
+                600: { items: 1.75 },
+                768: { items: 2 },
+                900: { items: 2.5 },
+                1024: { items: 3 },
+                1100: { items: 3 },
+                1200: { items: 3.15 },
+                1350: { items: 3.25 },
+                1500: { items: 3 },
+            },
+        });
+    }
+
 
 
     function owlProdutos() {
@@ -201,6 +224,27 @@
                 900: { items: 2.5 },
                 1024: {
                     items: 3,
+                    loop: !1
+                },
+            },
+        });
+    }
+
+
+
+    function owlPlanos() {
+        $(".carousel-planos").owlCarousel({
+            loop: !0,
+            nav: false,
+            dots: !1,
+            responsive: {
+                0: { items: 1.15 },
+                425: { items: 1.15 },
+                600: { items: 1.35 },
+                768: { items: 2.15 },
+                900: { items: 3.1 },
+                1024: {
+                    items: 4,
                     loop: !1
                 },
             },
@@ -272,7 +316,9 @@
     $(window).on('load', function () {
         aos_init();
         owlImages();
+        owlAssinaturas();
         owlCursos();
+        owlPlanos();
         owlProdutos();
         owlDepoimentos();
 

@@ -1,0 +1,18 @@
+{% extends "template.html" %}
+
+{% set page ='degustacao' %}
+
+{% block meta %}
+<title>lorem_title</title>
+{% endblock %}
+
+{% block content %}
+
+{% include "parts/header-back.html" %}
+<main id="main">
+    {% include "parts/degustacao/info-section.html" %}
+    {% include "parts/degustacao/planos-section.html" %}
+    {% include "parts/degustacao/assinatura-section.html" %}
+    {% include "parts/faq.html" %}
+</main><!-- End main -->
+{% endblock %}

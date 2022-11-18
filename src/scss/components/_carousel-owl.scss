@@ -121,6 +121,7 @@
         }
     }
 
+    &#owl-assinaturas,
     &#owl-depoimentos {
         .owl-nav {
             button {
@@ -225,6 +226,20 @@
                 }
             }
         }
+
+        #owl-assinaturas {
+            .owl-stage {
+                display: flex;
+                align-items: stretch;
+
+                .owl-item {
+                    display: flex;
+                    align-items: stretch;
+                    min-height: 100%;
+
+                }
+            }
+        }
     }
 
     .owl-carousel {
@@ -261,19 +276,6 @@
         margin: 0 auto;
         padding: 0;
 
-        // @media only screen and (max-width: 1500px) {
-        //     padding-right: 0;
-        // }
-
-        // @media only screen and (max-width: 1025px) {
-        //     padding: 0 20px 0 0;
-        // }
-
-        // @media only screen and (max-width: 600px) {
-        //     //   margin-top: 60px;
-        //     padding-left: 0;
-        // }
-
         @media (min-width: 576px) {
             max-width: 540px;
         }
@@ -290,8 +292,21 @@
             max-width: 1140px;
         }
 
-        .carousel-produtos {
+        .carousel-produtos,
+        .carousel-planos {
             position: relative;
+
+            .owl-stage {
+                display: flex;
+                align-items: stretch;
+
+                .owl-item {
+                    display: flex;
+                    align-items: stretch;
+                    min-height: 100%;
+
+                }
+            }
 
             .owl-stage-outer {
                 @media only screen and (max-width: 1500px) {

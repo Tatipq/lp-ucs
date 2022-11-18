@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Faq
+--------------------------------------------------------------*/
+.faq-section {
+
+    .section-title {
+        margin-bottom: 3rem;
+
+        .title-default {
+            strong {
+                display: block;
+            }
+        }
+    }
+
+    footer {
+        margin-top: 3rem;
+
+        @media (max-width: 576px) {
+            .btn {
+                padding: 1.075rem 0.75rem;
+                height: auto;
+            }
+        }
+    }
+}

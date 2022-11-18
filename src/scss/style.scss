@@ -5,6 +5,7 @@
 @import "base/typography";
 
 // Component.
+@import "components/accordion";
 @import "components/badge";
 @import "components/button";
 @import "components/card";
@@ -23,6 +24,7 @@
 
 // Layout.
 @import "layout/header";
+@import "layout/faq";
 @import "layout/footer";
 
 @import "layout/home/hero";
@@ -41,3 +43,6 @@
 @import "layout/curso/header";
 @import "layout/curso/info";
 @import "layout/curso/diferenciais";
+
+@import "layout/degustacao/planos";
+@import "layout/degustacao/assinatura";

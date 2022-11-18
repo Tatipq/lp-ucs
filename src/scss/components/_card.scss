@@ -129,6 +129,153 @@
         }
     }
 
+    &.card-plans {
+        border: none;
+        border-radius: 0.675rem;
+        background-color: $white;
+        box-shadow: none;
+        padding: 0;
+        height: 100%;
+
+        &.anual .card-header {
+            background-color: $pink;
+        }
+
+        &.semestral .card-header {
+            background-color: $cyan;
+        }
+
+        &.trimestral .card-header {
+            background-color: $blue;
+        }
+
+        &.mensal .card-header {
+            background-color: $purple;
+        }
+
+        .card-header {
+            position: relative;
+            justify-content: space-between;
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+            border-radius: 0.675rem 0.675rem 0 0;
+
+            padding: 1.2rem 1rem;
+
+            .card-title {
+                font-weight: $fw-bold;
+                font-size: 1.255rem;
+                line-height: 1;
+                color: $white;
+                margin-bottom: 0;
+            }
+
+            .discount {
+                background-color: $bg-light;
+            }
+        }
+
+        .card-footer,
+        .card-header {
+            border: none;
+            background-color: transparent;
+        }
+
+        .card-body {
+            padding: 2rem 1rem;
+            background-color: transparent;
+
+            .card-text {
+                &.price {
+                    line-height: 1.2;
+                    margin-bottom: 1.5rem;
+
+                    span {
+                        font-size: 0.875rem;
+                        text-decoration: line-through;
+                        color: $dark-gray;
+                        font-weight: $fw-medium;
+                    }
+
+                    strong {
+                        display: block;
+                        font-size: 2.1875rem;
+                        font-weight: $fw-bold;
+                        color: $text-dark;
+                    }
+                }
+            }
+        }
+
+        .card-footer {
+            padding: 0 1rem;
+
+            .btn {
+                margin-bottom: -23px;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+
+    &.card-signature {
+        border: solid 1px $line-light;
+        border-radius: 0.675rem;
+        background-color: $bg-light;
+        overflow: hidden;
+        box-shadow: none;
+        padding: 1.375rem;
+        height: 100%;
+        align-items: stretch;
+
+        img {
+            border-radius: 0.375rem;
+        }
+
+        .card-header {
+            position: relative;
+            // min-height: 90px;
+
+            .card-title {
+                font-weight: $fw-bold;
+                font-size: 1.625rem;
+                line-height: 1.2;
+                color: $primary;
+                text-transform: uppercase;
+            }
+        }
+
+        .card-footer,
+        .card-header {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+        }
+
+        .card-body {
+            padding: 0.5rem 0 2rem 0;
+            background-color: transparent;
+
+            .card-text {
+                line-height: 1.2;
+                font-size: 0.875rem;
+
+                span {
+                    font-size: 1rem;
+                    text-decoration: line-through;
+                    color: $dark-gray;
+                }
+
+                strong {
+                    display: block;
+                    font-size: 2rem;
+                    font-weight: $fw-bold;
+                    color: $text-dark;
+                }
+            }
+        }
+    }
+
     &.card-pilares {
         height: calc(100% - 60px);
         margin-top: 60px;
