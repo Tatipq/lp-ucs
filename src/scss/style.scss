@@ -8,6 +8,7 @@
 @import "components/accordion";
 @import "components/badge";
 @import "components/button";
+@import "components/breadcrumb";
 @import "components/card";
 @import "components/carousel-owl";
 @import "components/cookies";
@@ -24,6 +25,7 @@
 
 // Layout.
 @import "layout/header";
+@import "layout/top-head";
 @import "layout/footer";
 
 @import "layout/home/hero";
@@ -47,4 +49,6 @@
 @import "layout/interna/assinatura";
 @import "layout/interna/faq";
 
-@import "layout/degustacao/planos";
+@import "layout/assinatura/planos";
+
+@import "layout/degustacao/info";

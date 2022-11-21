@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Components Breadcrumb
+--------------------------------------------------------------*/
+.breadcrumb {
+    padding: 2rem 0;
+    border-radius: 0;
+    background-color: transparent;
+
+    .breadcrumb-item {
+        font-weight: $fw-bold;
+        font-size: .875rem;
+        color: $text-color;
+
+        &:before {
+            color: $text-color;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: $fw-normal;
+            color: $text-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

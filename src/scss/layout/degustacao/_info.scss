@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Section info
+--------------------------------------------------------------*/
+.degustacao-page {
+    .info-section {
+        background-color: $primary;
+
+        .breadcrumb .breadcrumb-item,
+        .breadcrumb .breadcrumb-item:before,
+        .breadcrumb .breadcrumb-item a,
+        .section-title .title-default,
+        article p,
+        footer p {
+            color: $white;
+        }
+
+        .card {
+
+            &.card-info-assine {
+                background-color: $blue;
+                border: 1px solid rgba($blue, .125);
+
+                .card-img-top {
+                    &:after {
+                        background-color: rgba($blue, 0.45);
+                    }
+                }
+
+                ul {
+                    border-top-color: #3DA1CB;
+                    border-bottom-color: #3DA1CB;
+
+
+                    li {
+                        svg {
+                            path {
+                                stroke: $primary;
+                            }
+                        }
+                    }
+                }
+
+                .card-body {
+                    .btn-outline-secondary {
+                        border-color: $primary;
+
+                        &:hover,
+                        &:active,
+                        &:not(:disabled):not(.disabled):active {
+                            background-color: $primary;
+                            border-color: $primary;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}

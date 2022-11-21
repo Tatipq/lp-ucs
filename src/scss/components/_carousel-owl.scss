@@ -145,6 +145,54 @@
             }
         }
     }
+
+    &#owl-campanha {
+        .owl-nav {
+            button {
+
+                &.owl-next,
+                &.owl-prev {
+                    background-color: $primary;
+                    border: none !important;
+
+                    width: 30px;
+                    height: 30px;
+
+                    border-radius: 0;
+                    box-shadow: none;
+
+                    position: absolute;
+                    top: -4px;
+
+                    &:hover {
+                        color: transparent;
+                        background-color: transparent;
+                        border-color: transparent;
+
+                        &:before {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+
+                &.owl-next {
+                    right: 0;
+
+                    &:before {
+                        background-image: url("../img/icon/icons_arrowright2.svg");
+                    }
+                }
+
+                &.owl-prev {
+                    left: 0;
+
+                    &:before {
+                        background-image: url("../img/icon/icons_arrowleft2.svg");
+                    }
+                }
+            }
+        }
+    }
 }
 
 .infinity-card {
@@ -263,7 +311,6 @@
         }
     }
 }
-
 
 .responsive-card {
     width: 100%;

@@ -1,5 +1,6 @@
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
+    {% include "parts/top-head.html" %}
     <div class="container d-flex align-items-center">
 
         <a href="index.html" class="logo scrollto mr-auto">
@@ -13,7 +14,7 @@
                 <li><a href="/#porque-anima" title="Sobre nós">Sobre nós</a></li>
                 <li><a href="cursos.html" title="Cursos">Cursos</a></li>
                 <li {% if page == "degustacao" %} class="active"{% endif %}><a href="degustacao.html" title="Degustação">Degustação</a></li>
-                <li {% if page == "assinatura" %} class="active"{% endif %}><a href="Assinaturas" title="Assinaturas">Assinaturas</a></li>
+                <li {% if page == "assinatura" %} class="active"{% endif %}><a href="assinatura.html" title="Assinaturas">Assinaturas</a></li>
             </ul>
         </nav><!-- .nav-menu -->
     </div><!-- /container -->

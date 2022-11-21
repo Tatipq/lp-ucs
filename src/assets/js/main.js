@@ -162,6 +162,21 @@
         });
     }
 
+    function owlCampanha() {
+        $("#owl-campanha").owlCarousel({
+            autoPlay: 3000,
+            stopOnHover: true,
+            navigation: true,
+            paginationSpeed: 1000,
+            goToFirstSpeed: 2000,
+            singleItem: true,
+            items: 1,
+            nav: true,
+            loop: !0,
+            dots: false
+        });
+    }
+
     // carousel
     function owlCursos() {
         $("#owl-cursos").owlCarousel({
@@ -315,6 +330,7 @@
 
     $(window).on('load', function () {
         aos_init();
+        owlCampanha();
         owlImages();
         owlAssinaturas();
         owlCursos();
