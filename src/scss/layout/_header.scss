@@ -13,10 +13,16 @@
 
     &.header-scrolled {
         top: 0;
-        padding: 0 0 8px 0;
+
+        @media (min-width: 992px) {
+            padding: 0 0 8px 0;
+
+        }
 
         .top-head {
-            margin-bottom: 8px;
+            @media (min-width: 992px) {
+                margin-bottom: 8px;
+            }
         }
 
         .btn {
@@ -35,6 +41,11 @@
         letter-spacing: 0.8px;
         font-family: $font-secondary;
 
+        @media (max-width: 991.96px) {
+            margin-top: .3rem;
+            margin-bottom: .3rem;
+        }
+
         a {
             color: $secondary;
 
@@ -49,7 +60,7 @@
     }
 
     @media (max-width: 992px) {
-        padding: 15px;
+        padding: 0;
         top: 0;
 
         .logo {
@@ -68,13 +79,23 @@
         padding-left: 1.25rem;
         padding-right: 1.25rem;
 
+        @media (max-width: 992px) {
+            font-size: .875rem;
+            padding-top: 0.425rem;
+            padding-bottom: 0.425rem;
+        }
+
         @media (max-width: 768px) {
             margin: 0 48px 0 0;
             padding: 6px 18px;
+
+            // font-size: .875rem;
+            // padding-top: 0.425rem;
+            // padding-bottom: 0.425rem;
         }
 
         @media (max-width: 599px) {
-            margin-right: 1rem;
+            margin-right: 40px;
             font-size: 0.875rem;
         }
 

@@ -14,6 +14,15 @@
             color: $white;
         }
 
+
+        @media (max-width: 991.98px) {
+            footer {
+                div[class*="col"] {
+                    margin: 1rem 0;
+                }
+            }
+        }
+
         .card {
 
             &.card-info-assine {
