@@ -14,15 +14,25 @@
             color: $white;
         }
 
+        .badge {
+            background-color: $dark-primary;
+            color: $white;
+
+            svg path {
+                stroke: $white;
+            }
+        }
+
         .card {
 
             &.card-info-assine {
                 background-color: $blue;
-                border: 1px solid rgba($blue, .125);
+                border: none;
 
                 .card-img-top {
                     &:after {
-                        background-color: rgba($blue, 0.45);
+                        // background-color: rgba($blue, 0.45);
+                        display: none;
                     }
                 }
 

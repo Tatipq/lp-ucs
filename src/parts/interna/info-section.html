@@ -67,8 +67,11 @@
             </div><!-- /col -->
             <div class="col-12 col-lg-5">
 
-                <!-- ###### ITEM ###### -->
-                {% include "parts/components/card-info-assine.html" %}
+                {% if page == "assinatura" %} 
+                    {% include "parts/components/card-info-assine.html" %}
+                {% elseif page == "degustacao" %}
+                    {% include "parts/components/card-info-degustacao.html" %}
+                {% endif %}
                 
             </div><!-- /col -->
         </div><!-- /row -->
