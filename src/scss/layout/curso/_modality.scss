@@ -1,0 +1,490 @@
+/*--------------------------------------------------------------
+# Section Modality
+--------------------------------------------------------------*/
+.modality-section {
+    background-image: linear-gradient(to right, #{$primary}bf, $secondary);
+
+    .section-title {
+        margin-bottom: 1.5rem;
+        position: relative;
+        font-size: 2.75rem;
+        font-weight: 700;
+        color: $white;
+        margin: 0 auto;
+        text-align: center;
+
+        span {
+            font-weight: 300;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    }
+
+    .card {
+        background-color: transparent;
+        border: none;
+
+        .card-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            min-height: 55px;
+            margin: 50px auto;
+            background-color: transparent;
+            border-bottom: none;
+
+            ul {
+                li {
+                    a {
+                        border: 1px solid $secondary;
+                        background: $secondary;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        padding: 14px 34px;
+                        border-radius: 30px;
+                        color: $white;
+                        text-decoration: none;
+
+                        &:hover {
+                            border: 1px solid $primary;
+                            background: $primary;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            background: #fff;
+            box-shadow: 0 2px 20px rgb(0 0 0 / 10%);
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+
+            width: 100%;
+            border-radius: 10px;
+            padding: 0 94px;
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            min-height: auto;
+
+            @media only screen and (max-width: 769px) {
+                padding: 0 5px;
+            }
+
+            .modality-tab {
+
+                .section-title {
+                    display: block;
+                    width: 100%;
+                    margin: 0 auto 50px;
+                    text-align: center;
+                    color: $secondary;
+                    font-size: 1.8rem;
+                }
+
+                .modality-card {
+
+                    .modality-header {
+                        display: flex;
+                        align-items: center;
+
+                        @media only screen and (max-width: 769px) {
+                            -webkit-box-orient: vertical;
+                            -webkit-box-direction: normal;
+                            flex-direction: column;
+                        }
+
+                        .v-select {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 100% !important;
+                            height: 50px;
+                            padding-right: 20px;
+                            padding-left: 20px;
+                            font-size: 1.2rem;
+                            background: #fff;
+                            border: 1px solid #c4c4c4;
+                            border-radius: 10px;
+                            z-index: 1;
+                            margin: 10px;
+
+                            ul {
+                                li {
+                                    color: $gray;
+
+                                    &:hover,
+                                    &:focus,
+                                    &:active {
+                                        background: $primary;
+                                        color: $white;
+                                    }
+                                }
+                            }
+
+                            .vs {
+
+                                &__dropdown-toggle {
+                                    width: 100%;
+                                    border: none;
+                                }
+
+                                &__selected-options {
+
+                                    input {
+                                        color: $gray;
+                                    }
+                                }
+                            }
+                        }
+
+                        .btn-modality {
+                            width: 100%;
+
+                            &:hover {
+                                background-color: $primary;
+                                border-color: $primary;
+                            }
+                        }
+                    }
+
+                    .modality-content {
+                        display: flex !important;
+
+                        @media only screen and (max-width: 769px) {
+                            flex-direction: column;
+                            display: flex !important;
+                        }
+
+                        .result-left {
+                            flex: 1;
+                            margin-right: 30px;
+                            text-align: left;
+
+                            @media only screen and (max-width: 769px) {
+                                margin-right: 0px;
+                            }
+
+                            .title-default {
+                                margin: 0 auto;
+                                color: $primary;
+                                font-weight: 800;
+                                text-align: left;
+
+                                @media only screen and (max-width: 769px) {
+                                    text-align: center;
+                                }
+
+                                &:before {
+                                    height: 0px;
+                                    margin-bottom: 0rem;
+                                }
+                            }
+
+                            .modality-description {
+                                margin-top: 20px;
+                                text-align: left;
+                                color: $gray;
+
+                                @media only screen and (max-width: 769px) {
+                                    text-align: center;
+                                }
+
+                                span {
+                                    font-size: 1.2rem;
+                                    line-height: 150%;
+                                    margin-top: 15px;
+                                }
+                            }
+
+                            .paragraph-disclaimer {
+                                font-size: 0.8rem;
+                                font-weight: 400;
+                                line-height: 150%;
+                                text-align: left;
+                                margin-top: 10px;
+                                color: $gray;
+
+                                @media only screen and (max-width: 769px) {
+                                    text-align: center;
+                                }
+                            }
+
+                            .result-info {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 30px;
+                                margin-top: 40px;
+
+                                @media only screen and (max-width: 769px) {
+                                    grid-template-columns: repeat(1, 1fr);
+                                }
+
+                                li {
+                                    display: flex;
+                                    align-items: flex-start;
+
+                                    @media only screen and (max-width: 769px) {
+                                        display: grid;
+                                        justify-items: center;
+                                    }
+
+                                    svg {
+                                        display: block;
+                                        width: 60px;
+                                        height: 60px;
+                                        margin-right: 5px;
+                                    }
+
+                                    div {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: baseline;
+                                        margin-left: 10px;
+
+                                        @media only screen and (max-width: 769px) {
+                                            align-items: center;
+                                        }
+
+                                        p {
+                                            font-size: 1.2rem;
+                                            font-weight: 400;
+                                            color: $gray;
+                                            text-align: left;
+                                            margin: 0;
+                                        }
+
+                                        h4 {
+                                            span {
+                                                color: $primary;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .result-buttons {
+                                display: flex;
+                                margin-top: 40px;
+
+                                >.button {
+                                    flex: 1;
+                                    display: inline-flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 1.6rem;
+                                    font-weight: 500;
+                                    white-space: nowrap;
+                                    min-width: 270px;
+                                    height: 50px;
+                                    padding-right: 20px;
+                                    padding-left: 20px;
+                                    border: 1px solid $primary;
+                                    ;
+                                    border-radius: 10px;
+                                    background: none;
+                                    outline: none;
+                                    cursor: pointer;
+                                    color: $primary;
+                                    text-decoration: none;
+
+                                    &:nth-child(1) {
+                                        margin-right: 20px;
+
+                                        @media only screen and (max-width: 769px) {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            max-width: 100%;
+                                            width: 100%;
+                                            height: 40px;
+                                            border-radius: 10px;
+                                            padding-right: 20px;
+                                            padding-left: 20px;
+                                            margin: 12px 0 0 auto;
+                                        }
+                                    }
+
+                                    &:hover {
+                                        background: $primary;
+
+                                        svg,
+                                        span,
+                                        .ico {
+                                            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(110deg) brightness(104%) contrast(470%);
+                                        }
+                                    }
+
+                                    svg {
+                                        display: inline-block;
+                                        width: 24px;
+                                        height: 24px;
+                                        margin-right: 8px;
+                                    }
+
+                                    span {
+                                        font-size: 1.2rem;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+
+                        .result-right {
+
+                            .result-price {
+                                @media only screen and (max-width: 769px) {
+                                    display: flex;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-box-direction: normal;
+                                    flex-direction: column;
+                                }
+
+
+                                .select-another-unity {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    max-width: 216px;
+                                    height: 36px;
+                                    border-radius: 30px;
+                                    padding-right: 15px;
+                                    padding-left: 15px;
+                                    margin: 0 0 33px auto;
+
+                                    border: 1px solid $primary;
+                                    background-color: $white;
+
+                                    span {
+                                        color: $primary;
+                                        display: inline-block;
+                                        margin-right: 6px;
+                                        font-size: 0.8rem;
+                                        font-weight: 500;
+                                    }
+
+                                    @media only screen and (max-width: 769px) {
+                                        display: flex;
+                                        justify-content: center;
+                                        order: 3;
+                                        align-items: center;
+                                        max-width: 100%;
+                                        width: 100%;
+                                        height: 40px;
+                                        border-radius: 10px;
+                                        padding-right: 20px;
+                                        padding-left: 20px;
+                                        margin: 12px 0 0 auto;
+                                        border: 1px solid #ff0475;
+                                        background-color: #fff;
+                                        -webkit-box-ordinal-group: 3;
+                                    }
+                                }
+
+                                .discount-price {
+                                    display: flex;
+                                    align-items: flex-end;
+
+                                    @media only screen and (max-width: 769px) {
+                                        padding-top: 32px;
+                                    }
+
+                                    &__title {
+                                        color: $secondary;
+                                        font-size: 1.2rem;
+                                        font-weight: 400;
+                                        text-align: left;
+                                        margin: 0;
+                                        line-height: 1.4rem;
+
+                                        span {
+                                            font-size: 1rem;
+                                        }
+                                    }
+
+                                    &__normal-value {
+                                        font-size: 2rem;
+                                        font-weight: 600;
+                                        color: #d8d8d8;
+                                        text-decoration: line-through;
+                                        text-align: left;
+                                        white-space: nowrap;
+                                        margin: 0;
+                                    }
+
+                                    &__discount {
+                                        background: $primary;
+                                        font-size: 0.8rem;
+                                        line-height: 1.2;
+                                        font-weight: 500;
+                                        color: $white;
+                                        border-radius: 5px;
+                                        text-align: center;
+                                        padding: 5px 25px;
+
+                                        span {
+                                            font-size: 1.6rem;
+
+                                            small {
+                                                font-size: 0.8rem;
+                                            }
+                                        }
+                                    }
+
+                                    &__discounted-value {
+                                        font-size: 3rem;
+                                        font-weight: 700;
+                                        line-height: initial;
+                                        text-align: left;
+                                        text-transform: uppercase;
+                                        white-space: nowrap;
+                                        margin-top: 20px;
+                                        color: $secondary;
+
+                                        span {
+                                            font-size: 2rem;
+                                            text-transform: lowercase;
+                                        }
+                                    }
+
+                                    &__regulation {
+                                        display: inline-block;
+                                        width: 100%;
+                                        font-size: 0.9rem;
+                                        font-weight: 400;
+                                        color: #949499;
+                                        text-align: left;
+                                        text-decoration: none;
+                                    }
+
+                                    div {
+                                        flex: 1;
+                                        margin-right: 28px;
+                                    }
+                                }
+
+                                .paragraph-default--red {
+                                    color: #f00;
+                                    text-align: left;
+                                    font-size: 0.7rem;
+                                }
+
+                                .btn-primary {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
