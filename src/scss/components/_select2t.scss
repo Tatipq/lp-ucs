@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# Components Select2
+--------------------------------------------------------------*/
+.select2-cursos {
+
+    .vs__dropdown-toggle {
+      height: 3rem;
+      border-radius: 0.675rem;
+      border: none;
+      padding: 0;
+      .vs__search {
+        line-height: 3rem;
+        padding-left: 1rem;
+        margin: 0;
+        // padding-right: 20px;
+        .select2-selection__placeholder {
+          color: $secondary;
+          font-weight: $fw-bold;
+        }
+      }
+      .vs__actions {
+        width: 3rem;
+        height: 3rem;
+        padding-left: 1rem;
+        .vs__open-indicator {
+          fill: $secondary;
+        }
+      }
+    }
+
+    &.vs--open {
+      .vs__dropdown-toggle {
+        border-radius: 0.675rem 0.675rem 0 0;
+      }
+    }
+
+    ul.vs__dropdown-menu {
+      border-radius: 0 0 0.675rem 0.675rem;
+      border: none;
+      overflow: hidden;
+      padding: 1rem 0 0;
+      background-color: #ecf0f5;
+      overflow: auto;
+      max-height: 350px;
+
+      li {
+        padding: 0.8rem;
+        background-color: #fff!important;
+        background: #fff!important;
+        color: $secondary;
+        cursor: pointer;
+        &:not(:last-child) {
+          border-bottom: solid 1px $light-gray;
+        }
+        &:hover,
+        &:focus,
+        &:focus-visible {
+          background: #{$secondary}03!important;
+          color: $primary;
+          box-shadow: none;
+        }
+      }
+      
+    }
+
+    &__selected{
+      font-size: 1rem;
+      color: $gray;
+    }
+}
